@@ -19,7 +19,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import GroupIcon from "@material-ui/icons/Group";
 import SettingsIcon from "@material-ui/icons/Settings";
-import HomeIcon from "@material-ui/icons/Home";
+import GroupWorkIcon from "@material-ui/icons/GroupWork";
 import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
 
 const useStyles = makeStyles((theme) => ({
@@ -96,9 +96,21 @@ export default function MenuAppBar() {
       <Link to="/" className={classes.link}>
         <ListItem button key={"Home"}>
           <ListItemIcon>
-            <HomeIcon />
+            <GroupWorkIcon />
           </ListItemIcon>
-          <ListItemText primary={"Home"} />
+          <Typography variant="body2" gutterBottom>
+            Internal meetings
+          </Typography>
+        </ListItem>
+      </Link>
+      <Link to="/" className={classes.link}>
+        <ListItem button key={"Home"}>
+          <ListItemIcon>
+            <GroupWorkIcon />
+          </ListItemIcon>
+          <Typography variant="body2" gutterBottom>
+            External meetings
+          </Typography>
         </ListItem>
       </Link>
       <Divider />
@@ -108,7 +120,10 @@ export default function MenuAppBar() {
           <ListItemIcon>
             <GroupIcon />
           </ListItemIcon>
-          <ListItemText primary={"Users"} />
+
+          <Typography variant="body2" gutterBottom>
+            Users
+          </Typography>
         </ListItem>
       </Link>
       <Link to="/settings" className={classes.link}>
@@ -116,7 +131,10 @@ export default function MenuAppBar() {
           <ListItemIcon>
             <SettingsIcon />
           </ListItemIcon>
-          <ListItemText primary={"Settings"} />
+
+          <Typography variant="body2" gutterBottom>
+            Settings
+          </Typography>
         </ListItem>
       </Link>
       <Link to="/sign-out" className={classes.link}>
@@ -124,7 +142,10 @@ export default function MenuAppBar() {
           <ListItemIcon>
             <PowerSettingsNewIcon />
           </ListItemIcon>
-          <ListItemText primary={"Sign out"} />
+
+          <Typography variant="body2" gutterBottom>
+            Sign out
+          </Typography>
         </ListItem>
       </Link>
     </div>
