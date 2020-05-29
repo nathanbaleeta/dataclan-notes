@@ -93,7 +93,7 @@ export default function MenuAppBar() {
       </Link>
 
       <Divider />
-      <Link to="/" className={classes.link}>
+      <Link to="/internal" className={classes.link}>
         <ListItem button key={"Home"}>
           <ListItemIcon>
             <GroupWorkIcon />
@@ -103,7 +103,7 @@ export default function MenuAppBar() {
           </Typography>
         </ListItem>
       </Link>
-      <Link to="/" className={classes.link}>
+      <Link to="/external" className={classes.link}>
         <ListItem button key={"Home"}>
           <ListItemIcon>
             <GroupWorkIcon />

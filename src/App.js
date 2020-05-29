@@ -9,6 +9,9 @@ function App() {
       <Header />
       <Switch>
         <Route path="/" />
+
+        <Route path="/internal" />
+        <Route path="/external" />
         <Route path="/users" />
         <Route path="/settings" />
         <Route path="/sign-out" />
